@@ -1,5 +1,3 @@
-FROM openjdk:8
-EXPOSE 8080
-COPY target/jenkins.jar jenkins.jar
-ENTRYPOINT ["java", "-jar", "/jenkins.jar"]
-
+FROM openjdk:17
+ADD target/Springdevops.jar Springdevops.jar
+ENTRYPOINT ["java","-jar","/Springdevops.jar"]
